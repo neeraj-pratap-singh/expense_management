@@ -1,15 +1,7 @@
-from expense_listing import read_expense_list
-from CreateExpense import takeInput
+from expense_listing import display_expense_list
+from create_expense import add_expense
+from sort_expense_list import sort_main
 from user_authentication import main
-
-def create_expense():
-    # TODO: Implement create expense functionality
-    pass
-
-# def expense_listing():
-#     # TODO: Implement expense listing functionality
-#     # pass
-#     read_expense_list()
 
 def filtering_of_listing():
     # TODO: Implement filtering of listing functionality
@@ -32,24 +24,26 @@ def dashboard():
         print("\n***********Expense Management Dashboard***********\n")
         print("1. Create an Expense")
         print("2. Expense Listing")
-        print("3. Filtering of Listing")
-        print("4. Edit and Delete Expense Entries")
-        print("5. Report Generation")
-        print("6. Exit")
-        choice = input("Enter your choice (1-6): ")
+        print("3. Sorting of Listing")
+        print("4. Filtering of Listing")
+        print("5. Edit and Delete Expense Entries")
+        print("6. Report Generation")
+        print("7. Exit")
+        choice = input("Enter your choice (1-7): ")
 
         if choice == '1':
-            #create_expense()
-            takeInput()
+            add_expense()
         elif choice == '2':
-            read_expense_list()
+            display_expense_list()
         elif choice == '3':
-            filtering_of_listing()
+            sort_main()
         elif choice == '4':
-            edit_expense()
+            filtering_of_listing()
         elif choice == '5':
-            delete_expense()
+            edit_expense()
         elif choice == '6':
+            delete_expense()
+        elif choice == '7':
             break
         else:
             print("Invalid choice. Please try again.")

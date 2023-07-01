@@ -1,2 +1,4 @@
-Date	 Category	 Description	 Amount
-2023-02-01	 DevOps	 New Batch	 50000
+Date,Category,Description,Amount
+2023-02-23,food,Tea and snacks,45
+2020-03-22,Recharge,idea,22
+2020-04-20,Gift,gift to friend on birthday,500
