@@ -1,11 +1,8 @@
 from expense_listing import display_expense_list
 from create_expense import add_expense
 from sort_expense_list import sort_main
+from filter_expense_list import filter_main
 from user_authentication import main
-
-def filtering_of_listing():
-    # TODO: Implement filtering of listing functionality
-    pass
 
 def edit_expense():
     # TODO: Implement edit expense functionality
@@ -38,7 +35,7 @@ def dashboard():
         elif choice == '3':
             sort_main()
         elif choice == '4':
-            filtering_of_listing()
+            filter_main()
         elif choice == '5':
             edit_expense()
         elif choice == '6':
