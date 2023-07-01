@@ -4,10 +4,10 @@ def create_expense():
     # TODO: Implement create expense functionality
     pass
 
-def expense_listing():
-    # TODO: Implement expense listing functionality
-    # pass
-    read_expense_list()
+# def expense_listing():
+#     # TODO: Implement expense listing functionality
+#     # pass
+#     read_expense_list()
 
 def filtering_of_listing():
     # TODO: Implement filtering of listing functionality
@@ -39,7 +39,7 @@ def dashboard():
         if choice == '1':
             create_expense()
         elif choice == '2':
-            expense_listing()
+            read_expense_list()
         elif choice == '3':
             filtering_of_listing()
         elif choice == '4':
