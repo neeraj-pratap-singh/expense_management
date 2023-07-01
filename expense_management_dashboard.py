@@ -1,4 +1,5 @@
 from expense_listing import read_expense_list
+from CreateExpense import takeInput
 
 def create_expense():
     # TODO: Implement create expense functionality
@@ -37,7 +38,8 @@ def dashboard():
         choice = input("Enter your choice (1-6): ")
 
         if choice == '1':
-            create_expense()
+            #create_expense()
+            takeInput()
         elif choice == '2':
             read_expense_list()
         elif choice == '3':

@@ -3,15 +3,16 @@ from is_valid_date import is_valid_date
 from is_valid_number import is_valid_number
 
 def createFile():
-    if not os.path.exists("ExpenseCreated.csv"):
-        fileObject = open("ExpenseCreated.csv",'w')
+    if not os.path.exists("expense_list.csv"):
+        fileObject = open("expense_list.csv",'w')
         data = "Date\t Category\t Description\t Amount"
         fileObject.write(data)
     else:
         print("File already exist!")
-createFile()
+
 
 def takeInput():
+    createFile()
     while True:
         date = input("Enter Date in yyyy-mm-dd: ")
         if is_valid_date(date):
@@ -40,12 +41,13 @@ def takeInput():
         else:
             print("Amout Required..!!")
 
-    return date, category, description, amount
+    #return date, category, description, amount
+    writeFile(date, category, description, amount)
 
 def writeFile(date, category, description, amount):
-    fileObject = open("ExpenseCreated.csv",'a') 
+    fileObject = open("expense_list.csv",'a') 
     data = "\n" + date + "\t " + category + "\t " + description + "\t " + str(amount)
     fileObject.write(data)
 
-date, category, description, amount=takeInput()
-writeFile(date, category, description, amount)
+#date, category, description, amount=takeInput()
+
