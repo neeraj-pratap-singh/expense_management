@@ -1,5 +1,6 @@
 from expense_listing import read_expense_list
 from CreateExpense import takeInput
+from user_authentication import main
 
 def create_expense():
     # TODO: Implement create expense functionality
@@ -55,4 +56,9 @@ def dashboard():
 
 
 if __name__ == '__main__':
-    dashboard()
+    while True:
+        userAuthentication = main()
+        if userAuthentication:
+            dashboard()
+        else:
+            print('Please try again')
