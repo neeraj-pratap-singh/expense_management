@@ -3,6 +3,7 @@ from create_expense import add_expense
 from sort_expense_list import sort_main
 from filter_expense_list import filter_main
 from expense_report import expense_report_main
+from edit_and_delete import edit_delete_main
 from user_authentication import main
 
 def edit_expense():
@@ -38,7 +39,7 @@ def dashboard():
         elif choice == '4':
             filter_main()
         elif choice == '5':
-            edit_expense()
+            edit_delete_main()
         elif choice == '6':
             expense_report_main()
         elif choice == '7':
