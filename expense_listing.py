@@ -1,15 +1,15 @@
 import csv
-import os
 
-def read_expense_list():
-    if not os.path.exists('expense_list.csv'):
-        print("\nExpense list file does not exist.\n")
-        return
+EXPENSE_LIST_FILE = 'expense_list.csv'
 
-    with open('expense_list.csv', 'r') as file:
+def display_expense_list():
+    with open(EXPENSE_LIST_FILE, 'r') as file:
         reader = csv.reader(file)
+        header = next(reader)
+        print("{:<12} {:<10} {:<30} {:<8}".format(*header))  # Print header in a formatted manner
+        print("-" * 70)  # Print separator line
         for row in reader:
-            print(row)
+            print("{:<12} {:<10} {:<30} {:<8}".format(*row))  # Print each row in a formatted manner
 
-# Call the function to read and display the expense list
-# read_expense_list()
+if __name__ == '__main__':
+    display_expense_list()
