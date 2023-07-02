@@ -38,7 +38,10 @@ def generate_expense_report(filename):
     for year, amount in yearly_expenses.items():
         print(f"{year}: ₹{amount:.2f}")
 
+def expense_report_main():
+    filename = 'expense_list.csv'
+    generate_expense_report(filename)
 
 # Call the function and provide the filename
-filename = 'expense_list.csv'
-generate_expense_report(filename)
+if __name__ == '__main__':
+    expense_report_main()
