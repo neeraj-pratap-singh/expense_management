@@ -48,9 +48,10 @@ def login():
             if row[0] == username and row[1] == password:
                 print("Login successful.")
                 # Continue with dashboard or other actions
-                return
+                return True
 
     print("Invalid username or password.")
+    return False
 
 def main():
     while True:
@@ -62,9 +63,8 @@ def main():
         if choice == '1':
             register()
         elif choice == '2':
-            login()
-        elif choice == '3':
-            break
+            isSuccess = login()
+            return isSuccess
         else:
             print("Invalid choice. Please try again.")
 
