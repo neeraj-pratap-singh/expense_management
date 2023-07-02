@@ -1,5 +1,6 @@
 from expense_listing import read_expense_list
 from CreateExpense import takeInput
+from edit_and_delete import edit_delete_main
 
 def create_expense():
     # TODO: Implement create expense functionality
@@ -45,7 +46,7 @@ def dashboard():
         elif choice == '3':
             filtering_of_listing()
         elif choice == '4':
-            edit_expense()
+            edit_delete_main()
         elif choice == '5':
             delete_expense()
         elif choice == '6':

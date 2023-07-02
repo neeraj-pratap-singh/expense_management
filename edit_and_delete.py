@@ -51,13 +51,15 @@ def save_expenses(expenses):
         writer = csv.writer(file)
         writer.writerows(expenses)
 
-expenses = read_expense_list()
-        
-user_input = input("Do you want to edit or delete an entry? (E for edit, D for delete, any other key to continue): ")
-if user_input.upper() == 'E':
-    modify_expense(expenses)
-elif user_input.upper() == 'D':
-    delete_expense(expenses)
+def edit_delete_main():
+    expenses = read_expense_list()
+            
+    user_input = input("Do you want to edit or delete an entry? (E for edit, D for delete, any other key to continue): ")
+    if user_input.upper() == 'E':
+        modify_expense(expenses)
+    elif user_input.upper() == 'D':
+        delete_expense(expenses)
     
-
+if __name__ == '__main__':
+    edit_delete_main()
 
