@@ -6,18 +6,6 @@ from expense_report import expense_report_main
 from edit_and_delete import edit_delete_main
 from user_authentication import main
 
-def edit_expense():
-    # TODO: Implement edit expense functionality
-    pass
-
-def delete_expense():
-    # TODO: Implement delete expense functionality
-    pass
-
-def generate_report():
-    # TODO: Implement report generation functionality
-    pass
-
 def dashboard():
     while True:
         print("\n***********Expense Management Dashboard***********\n")
