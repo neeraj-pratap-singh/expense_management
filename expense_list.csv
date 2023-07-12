@@ -1,2 +1,11 @@
-Date	 Category	 Description	 Amount
-2023-02-01	 DevOps	 New Batch	 50000
+Date,Category,Description,Amount
+2023-02-23,food,Tea and snacks,45
+2022-02-23,food,breakfast,120
+2023-02-23,food,dinner,340
+2020-02-23,party,party with friends,50
+2020-02-23,food,lunch,450
+2020-03-22,Recharge,idea,22
+2020-04-22,Recharge,jio,220
+2020-03-02,Recharge,airtel,144
+2020-04-20,Gift,gift to friend on birthday,500
+2021-09-12,Education,hero vired fees,11800
